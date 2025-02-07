@@ -1,0 +1,70 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+
+.container-div{
+  width: 300px;
+  margin: auto;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.list-grid,
+.input-list-grid{
+  display: grid;
+  grid-template-columns: 200px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.list-grid{
+  margin-top: 12px;
+  background-color: rgb(160, 80, 80);
+  border-radius: 5px;
+}
+
+.list-text{
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+
+.input-list-grid{
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+button{
+  border-radius: 8px;
+}
+
+.name-input{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.add-button{
+  font-size: 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button{
+  font-size: 15px;
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

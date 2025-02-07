@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping list</title>
+  <link rel="stylesheet" href="Shopping-list.css">
+</head>
+<body>
+
+  <div class="container-div">
+    <p class="title">Shopping List</p>
+    <div class="input-list-grid">
+      <input type="text" placeholder="Write here what you need" class="name-input js-name-input">
+      <button class="add-button" onclick="
+        addToList();
+      ">Add</button>
+    </div>
+    <div class=" js-shopping-list"></div>
+  </div>
+
+  <script src="Shopping-list.js"></script>
+</body>
+</html>
