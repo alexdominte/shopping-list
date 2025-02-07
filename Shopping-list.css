@@ -5,7 +5,7 @@ body{
 }
 
 .container-div{
-  width: 300px;
+  width: 350px;
   margin: auto;
 }
 
@@ -15,19 +15,26 @@ body{
   text-align: center;
 }
 
-.list-grid,
 .input-list-grid{
   display: grid;
-  grid-template-columns: 200px 100px;
+  grid-template-columns: 1fr 90px; /* Use 1fr for flexible input column */
   column-gap: 10px;
   row-gap: 10px;
   align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .list-grid{
+  display: grid;
+  grid-template-columns: auto 90px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
   margin-top: 12px;
   background-color: rgb(160, 80, 80);
-  border-radius: 5px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .list-text{
@@ -38,7 +45,7 @@ body{
 
 .input-list-grid{
   margin-bottom: 10px;
-  align-items: stretch;
+  align-items: center;
 }
 
 button{
@@ -50,6 +57,7 @@ button{
   padding-bottom: 8px;
   font-size: 15px;
   padding-left: 10px;
+  width: 94%; /* Keeps the input within its column */
 }
 
 .add-button{
@@ -58,6 +66,8 @@ button{
   color: white;
   border: none;
   cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .delete-button{
