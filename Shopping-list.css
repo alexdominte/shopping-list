@@ -27,7 +27,7 @@ body{
 
 .list-grid{
   display: grid;
-  grid-template-columns: auto 90px;
+  grid-template-columns: minmax(0, 1fr) 90px;
   column-gap: 10px;
   row-gap: 10px;
   align-items: center;
@@ -40,6 +40,7 @@ body{
 .list-text{
   padding-left: 15px;
   font-weight: 500;
+  overflow-wrap: break-word;
 }
 
 
