@@ -11,7 +11,10 @@
   <div class="container-div">
     <p class="title">Shopping List</p>
     <div class="input-list-grid">
-      <input type="text" placeholder="Write here what you need" class="name-input js-name-input">
+      <input type="text" placeholder="Write here what you need" class="name-input js-name-input" onkeydown="
+        if (event.key === 'Enter')
+        addToList();
+      ">
       <button class="add-button" onclick="
         addToList();
       ">Add</button>
